@@ -1,11 +1,21 @@
 <!DOCTYPE html>
 <html>
-    <form action="https://formspree.io/reedem247@yahoo.com" method="POST"></form>
     <head>
-       <title>Marsha Reed</title>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Hello, I am Marsha Reed</title>
+      <link rel="stylesheet" type="text/css" href="./dist/css/main.min.css">
     </head>
+    <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="resume.html">Resume</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
     <body>
-        <div>
+      <form class="contact-form" action="https://formspree.io/reedem247@yahoo.com.tld" method="POST">
+          <div>
             <label for="name">Name</label>
             <input id="name" type="text" name="name">
           </div>
@@ -19,16 +29,22 @@
           </div>
           <div>
             <input type="hidden" name="_subject" value="New submission!">
+            <input type="hidden" name="_next" value="//prog227.github.io/thanks.html">
           </div>
           <div>
             <input type="submit" value="Send">
           </div>
-            <nav>
-                    <ul>
-                      <li><a href="index.html">Home</a></li>
-                      <li><a href="resume.html">Resume</a></li>
-                      <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                  </nav>
+      </form>
+          <script>
+            var toggleMenu = document.getElementById('toggleMenu');
+            var nav = document.querySelector('nav');
+             toggleMenu.addEventListener('click', function () {
+                 if (nav.style.display == 'block') {
+                    nav.style.display = 'none';
+                 } else {
+                    nav.style.display = 'block';
+                 }
+                });
+         </script>
     </body>
 </html>
