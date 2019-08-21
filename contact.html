@@ -6,6 +6,9 @@
       <title>Hello, I am Marsha Reed</title>
       <link rel="stylesheet" type="text/css" href="./dist/css/main.min.css">
     </head>
+    <h1>Welcome to Marsha's WebSite</h1>
+    <p>Looking forward to hearing from you. </p>
+    <img src="https://images.all-free-download.com/images/graphiclarge/the_air_the_sun_stock_photo_165870.jpg" alt="Air and Sun Photo" height="300" width="500">
     <nav>
         <ul>
           <li><a href="index.html">Home</a></li>
@@ -13,23 +16,29 @@
           <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
+    <style>
+    h1 { 
+        color: blueviolet;
+      }
+    </style> 
     <body>
-      <form class="contact-form" action="https://formspree.io/reedem247@yahoo.com.tld" method="POST">
+      <form action="https://formspree.io/reedem247@yahoo.com" method="POST">
           <div>
             <label for="name">Name</label>
             <input id="name" type="text" name="name">
           </div>
+          <br>
           <div>
             <label for="email">Email</label>
             <input id="email" type="text" name="_replyto">  
           </div>
+          <br>
           <div>
             <label for="message">Message</label>
             <textarea id="message" name="message"></textarea>
           </div>
           <div>
-            <input type="hidden" name="_subject" value="New submission!">
-            <input type="hidden" name="_next" value="//prog227.github.io/thanks.html">
+              <input type="hidden" name="_subject" value="New submission!">
           </div>
           <div>
             <input type="submit" value="Send">
