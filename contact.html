@@ -7,7 +7,7 @@
       <link rel="stylesheet" type="text/css" href="./dist/css/main.min.css">
     </head>
     <h1>Welcome to Marsha's WebSite</h1>
-    <p>Looking forward to hearing from you. </p>
+    <p>What are you thankful for? Looking forward to hearing from you. </p>
     <img src="https://images.all-free-download.com/images/graphiclarge/the_air_the_sun_stock_photo_165870.jpg" alt="Air and Sun Photo" height="300" width="500">
     <nav>
         <ul>
@@ -22,7 +22,7 @@
       }
     </style> 
     <body>
-      <form action="https://formspree.io/reedem247@yahoo.com" method="POST">
+      <form class="contact-form" action="https://formspree.io/reedem247@yahoo.com" method="POST">
           <div>
             <label for="name">Name</label>
             <input id="name" type="text" name="name">
@@ -39,11 +39,13 @@
           </div>
           <div>
               <input type="hidden" name="_subject" value="New submission!">
+              <input type="hidden" name="_next" value="//prog227.github.io/thanks.html">
+              <input type="text" name="_gotcha" style="display:none"> 
           </div>
           <div>
             <input type="submit" value="Send">
           </div>
-      </form>
+       </form>
           <script>
             var toggleMenu = document.getElementById('toggleMenu');
             var nav = document.querySelector('nav');
