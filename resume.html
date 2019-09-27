@@ -4,34 +4,68 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="./dist/css/main.css">
     <title>Resume</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     </head>
       <body>
-        <header> 
-            <span class="logo">My WebSite</span> 
-            <a id="toggleMenu">Menu</a>
-            <nav>
-              <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="resume.html">Resume</a></li>
-                <li><a href="contact.html">Contact</a></li>
-              </ul>
-            </nav>
+        <header>
+          <span class="logo">My WebSite</span>
+          <a id="toggleMenu">Menu<a></a>
+          <nav>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="resume.html">Resume</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </nav>
         </header>
           <main>
             <h1 style="font-size:45px; "align="center"> Marsha Reed</h1>
-            <p style="font-size:20px"> Chicago, IL</p>
+            <p style="font-size:20px; "align="center"> <span> Chicago, IL
+             &#x25CF; marshareed11860@gmail.com</span>
+            </p>
              &#x25CF;
              <a href="https://www.linkedin.com/in/marsha-reed" target="_blank" rel="noopener">LinkedIn</a>
              &#x25CF;
              <a href="https://github.com/prog227" target="_blank" rel="noopener">GitHub</a>
            
           <h2 style="font-size:25px; "align="center">Full Stack Web and Hybrid Mobile Applications Developer</h2>
-          <div>
           <p>Full stack web and hybrid mobile applications developer specializing in full stack JavaScript application and 
               architecture. Experienced in all stages of the development life cycle.</p>
-          </div>
-          <div>
+              <p style="font-size:25px; "align="center"><strong>Core Competencies</strong></p>
+              <div>
+              <span>
+                 <ul style="list-style-type: circle; display: inline-block">
+                  <li>Full Stack Development</li> 
+                  <li>Strong Analytical Skills</li> 
+                  <li>Prioritizes Tasks</li> 
+                 </ul>
+
+                 <ul style="list-style-type: circle; display: inline-block">
+                  <li>Mobile Development</li>
+                  <li>Savvy Problem Solver</li>
+                  <li>Strong Leadership Skills</li>
+                 </ul>
+              </span>
+             </div>
+             <div>
+                <span>  
+                <p>Platforms: Linux, LAMP, MEAN, NodeJS</p>
+                <p>Database:  MySQL, MongoDB</p>
+                <p>Tools:     VS Code, SSH, Gulp, Git, ServiceNow, Bluezone, TSO, Toad, SCRUM, Agile, MS Office, MVS Utilities, Putty</p>
+                <p>Languages: HTML, CSS, SASS, Javascript, PHP, SQL, COBOL, JCL</p>
+                </span>
+                </div>
+             <div>
+             <h3 style="font-size:25px; "align="center"> CERTIFICATIONS & TRAINING</h3>
+             <ul> 
+               <li> ITIL Foundation Certification, Pink Elephant</li>
+               <li> CICS Certificate, DePaul University</li>
+               <li> Change Management Certificate, Lake Forest Graduate School of Management</li>
+               <li> Help Desk Institute (HDI) Customer Service Representative & Toastmasters CC/CL</li>
+               <li> Ethics, Privacy-Information Security, Workplace Harassment, Avoiding Accidental Disclosure, Phishing</li>
+            </ul>
+            </div>
+            <div>
           <h3 style="font-size:25px; "align="center">PROFESSIONAL EXPERIENCE</h3>
           </div>
           <div>
@@ -53,30 +87,23 @@
           <li> Designed and executed connectivity testing between Blue Cross and Blue Shield Licensees using inhouse and vendor supplied
             software.</li>
         </ul>
-        <h3 style="font-size:20px; "align="center"> CERTIFICATIONS & TRAINING</h3>
-        <ul> 
-        <li> Agile Fullstack Web and Hybrid Mobile Application Development, MicroTrain Technology</li>
-        <li> ITIL Foundation Certification, Pink Elephant</li>
-        <li> CICS Certificate, DePaul University</li>
-        <li> Change Management Certificate, Lake Forest Graduate School of Management</li>
-        <li> Help Desk Institute (HDI) Customer Service Representative & Toastmasters CC/CL</li>
-        <li> Ethics, Privacy-Information Security, Workplace Harassment, Avoiding Accidental Disclosure, Phishing</li>
-        </ul>
         <h3 style="font-size:20px; "align="center"> EDUCATION</h3>
-        <div>
         <p> Bachelor of Science in Math and Computer Science, University of Illinois at Chicago</p>
-        </div>
-      </main>
-        <script>
-            var toggleMenu = document.getElementById('toggleMenu');
-            var nav = document.querySelector('nav');
-            toggleMenu.addEventListener('click', function () {
-              if (nav.style.display == 'block') {
-                nav.style.display = 'none';
-              } else {
-                nav.style.display = 'block';
-              }
-            });
-          </script>
+        <p> Agile Full Stack Web and Hybrid Mobile Application Development, Microtrain Technologies</p>
+       </main>
+       <script>
+        var toggleMenu = document.getElementById('toggleMenu');
+        var nav = document.querySelector('nav');
+        toggleMenu.addEventListener(
+          'click',
+          function(){
+            if(nav.style.display=='block'){
+              nav.style.display='none';
+            }else{
+              nav.style.display='block';
+            }
+          }
+        );
+      </script>
     </body>
 </html>

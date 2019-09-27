@@ -1,26 +1,6 @@
-/* variables */
 /* mixins */
 /* clear floats */
-/* Utility Classes */
-.clearfix:after {
-  content: "";
-  display: table;
-  clear: both; }
-
-/** Rows and Columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both; }
-
-.col {
-  float: left;
-  width: 25%;
-  padding: .5rem;
-  /* debug */
-  border: 1px solid #990000;
-  background: #fff; }
-
+/* variables */
 .text-success {
   color: #3c763d; }
 
@@ -48,6 +28,26 @@
   border-color: #8a6d3b;
   color: #8a6d3b; }
 
+/* Utility Classes */
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+/** Rows and Columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+.col {
+  float: left;
+  width: 25%;
+  padding: .5rem;
+  /* debug */
+  border: 1px solid #990000;
+  background: #fff; }
+
 /* universal settings */
 * {
   box-sizing: border-box; }
@@ -57,6 +57,6 @@ body {
   color: #333;
   margin: 0 auto;
   padding: 0;
-  width: 1180px; }
+  width: 1170px; }
 
 /*# sourceMappingURL=main.css.map */
