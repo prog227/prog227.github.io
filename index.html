@@ -1,9 +1,46 @@
 <!DOCTYPE html>
-<html>
-    <head>
-       <title>Marsha Reed</title>
+ <html lang="en">
+    <head>  
+      <meta charset="UTF-8"> 
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <link rel="stylesheet" type="text/css" href="./dist/css/main.css">
+      <title>Hello, I am Marsha Reed</title>
     </head>
     <body>
+        <header>
+            <span class="logo">My WebSite</span>
+            <a id="toggleMenu">Menu<a></a>
+            <nav>
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="contact.html">Contact</a></li>
+              </ul>
+            </nav>
+          </header>
+    <main>  
+        <h1> Hello, I am Marsha Reed</h1>
+        <p> Welcome to my web site.</p>  
+        <img style="border-radius: 50%; float: right; margin-right: 1em;" src="https://www.gravatar.com/avatar/4678a33bf44c38e54a58745033b4d5c6?d=mm&s=64" alt="Marsha Reed">
+        <p>IT Software Engineer with designing, programming, analytical and problem-solving skills.
+            Excellent communicator with emphasis on building strong relationships. Skilled in organizing, managing and tracking
+            IT issues and project goals to meet deadlines. Certified in ITIL Foundations and Change Management.
+        </p>
+    </main>    
+    <script>
+        var toggleMenu = document.getElementById('toggleMenu');
+        var nav = document.querySelector('nav');
+        toggleMenu.addEventListener(
+            'click',
+            function(){
+              if(nav.style.display=='block'){
+                nav.style.display='none';
+              }else{
+                nav.style.display='block';
+              }
+            }
+          );
+    </script>
     </body>
 </html>
 

@@ -1,50 +1,58 @@
 <!DOCTYPE html>
 <html>
+    <html lang="en">
     <head>
       <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
       <title>Hello, I am Marsha Reed</title>
       <link rel="stylesheet" type="text/css" href="./dist/css/main.min.css">
+      <style>
+          h1 { 
+              color: blueviolet;
+            }
+      </style> 
     </head>
-    <h1>Welcome to Marsha's WebSite</h1>
-    <p>What are you thankful for? Looking forward to hearing from you. </p>
-    <img src="https://images.all-free-download.com/images/graphiclarge/the_air_the_sun_stock_photo_165870.jpg" alt="Air and Sun Photo" height="300" width="500">
-    <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="resume.html">Resume</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
-    <style>
-    h1 { 
-        color: blueviolet;
-      }
-    </style> 
     <body>
-      <form class="contact-form" action="https://formspree.io/reedem247@yahoo.com" method="POST">
+      <main>
+          <header>
+              <span class="logo">My Contact</span>
+              <a id="toggleMenu">Menu<a>
+              <nav>
+                <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                </ul>
+              </nav>
+            </header>
+        <h1>Welcome to Marsha's WebSite</h1>
+       <p>What are you thankful for? Looking forward to hearing from you. </p>
+       <img src="https://images.all-free-download.com/images/graphiclarge/the_air_the_sun_stock_photo_165870.jpg" alt="Air and Sun Photo" height="300" width="500">
+       <form class="contact-form" action="https://formspree.io/reedem247@yahoo.com" method="POST">
+       <div>
+          <input type="hidden" name="_subject" value="New submission!">
+       </div>
           <div>
             <label for="name">Name</label>
             <input id="name" type="text" name="name">
           </div>
-          <br>
+          
           <div>
             <label for="email">Email</label>
             <input id="email" type="text" name="_replyto">  
           </div>
-          <br>
+          
           <div>
             <label for="message">Message</label>
             <textarea id="message" name="message"></textarea>
           </div>
+
           <div>
-              <input type="hidden" name="_subject" value="New submission!">
               <input type="hidden" name="_next" value="//prog227.github.io/thanks.html">
-              <input type="text" name="_gotcha" style="display:none"> 
           </div>
-          <div>
-            <input type="submit" value="Send">
-          </div>
+
+          <input type="submit" value="Send">
+
        </form>
           <script>
             var toggleMenu = document.getElementById('toggleMenu');
