@@ -103,9 +103,6 @@ body{
   h2 {
     text-align: center;
   }
-.nobull {
-  list-style-type: none;
-}
 
 main {
   /* Use a margin to center the page */
