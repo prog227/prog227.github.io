@@ -91,6 +91,22 @@ body{
     background: #444;
   }
 
+  .row {
+    display: flex;
+  }
+
+  .column {
+    flex: 50%;
+    height: 50x;
+  }
+
+  h2 {
+    text-align: center;
+  }
+.nobull {
+  list-style-type: none;
+}
+
 main {
   /* Use a margin to center the page */
   margin: 0 auto;
